@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | Kadamb Bagh Sariska</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Tenor+Sans&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html"><span>Kadamb</span><small>Bagh Sariska</small></a><button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button><nav class="nav-panel" aria-label="Primary navigation"><a href="about.html">About</a><a href="stays.html">Stays</a><a href="experiences.html">Experiences</a><a href="dining.html">Dining</a><a href="wellness.html">Wellness</a><a href="gallery.html">Gallery</a><a href="chronicles.html">Chronicles</a><a href="booking.html">Booking</a><a href="contact.html">Contact</a></nav></header>
+  <main>
+    <section class="booking-shell">
+      <div class="booking-copy reveal"><p class="eyebrow">Reservations</p><h1>Begin your escape into Sariska.</h1><p>Share your preferred dates and our concierge will compose a stay around safaris, dining rituals, wellness, and privacy.</p></div>
+      
+      <form class="booking-form reveal">
+
+        <label>
+          Inquiry Department
+          <select name="inquiryType" required style="border-bottom: 2px solid #2d4739; font-weight: bold; padding: 10px 0; margin-bottom: 20px;">
+            <option value="reservation">Reservation Office (Booking Confirmation)</option>
+            <option value="stay">Guest Relations (General Stay & Information)</option>
+          </select>
+        </label>
+
+        <div class="form-row">
+          <label>Check-in<input type="date" name="checkin" required></label>
+          <label>Check-out<input type="date" name="checkout" required></label>
+        </div>
+
+        <div class="form-row">
+          <label>Guests
+            <select name="guests">
+              <option>2 Guests</option>
+              <option>3 Guests</option>
+              <option>4 Guests</option>
+              <option>Family Retreat</option>
+            </select>
+          </label>
+          <label>Room Preference
+            <select name="room">
+              <option>Royal Jungle Suite</option>
+              <option>Maharaja Villa</option>
+              <option>Forest Glass Cabin</option>
+              <option>Luxury Safari Tent</option>
+            </select>
+          </label>
+        </div>
+
+        <label>Your Name<input type="text" name="name" placeholder="Full name" required></label>
+        <label>Email Address<input type="email" name="contact" placeholder="email@example.com" required></label>
+        <label>Phone Number<input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required></label>
+        
+        <label>Stay Notes
+          <textarea name="notes" rows="5" placeholder="Safari preferences, dining rituals, wellness requests"></textarea>
+        </label>
+
+        <button class="btn primary" type="submit">Send Inquiry</button>
+        <p class="form-note">Your inquiry is securely delivered to our concierge team.</p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><div><h2>Kadamb Bagh</h2><p>Sariska, Rajasthan</p></div><div class="footer-links"><a href="booking.html">Reservations</a><a href="contact.html">Concierge</a><a href="chronicles.html">Sariska Chronicles</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
